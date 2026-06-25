@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h2>Painel Integrador</h2>
+      <p>Cole o texto recebido do cliente abaixo</p>
+    </header>
+    
+    <main class="app-content">
+      <textarea 
+        id="rawText" 
+        placeholder="Cole aqui a mensagem completa do cliente...&#10;Ex: CNPJ da escola: 30828818000168..."
+      ></textarea>
+      
+      <button id="btnProcess" class="btn-primary">
+        <span>Processar e Preencher Formuário</span>
+      </button>
+    </main>
+
+    <footer class="app-footer">
+      <div id="statusMessage" class="status-idle">Aguardando comando...</div>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

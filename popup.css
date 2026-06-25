@@ -1,0 +1,145 @@
+:root {
+  /* Variáveis de Identidade Visual - Padrão ICD */
+  --icd-primary: #0A58CA;       /* Cor principal dos botões e destaques */
+  --icd-primary-hover: #084298; /* Cor principal ao passar o rato (hover) */
+  --icd-background: #F8FAFC;    /* Fundo geral do popup */
+  --icd-card-bg: #FFFFFF;       /* Fundo da área de texto */
+  --icd-text-dark: #1E293B;     /* Texto principal (títulos) */
+  --icd-text-light: #64748B;    /* Texto secundário (descrições) */
+  --icd-border: #E2E8F0;        /* Cor das linhas e bordas */
+  --icd-success: #10B981;       /* Verde para mensagens de sucesso */
+  --icd-error: #EF4444;         /* Vermelho para mensagens de erro */
+  
+  /* Sombras e Raios */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--icd-background);
+  color: var(--icd-text-dark);
+  width: 380px;
+  /* Utilização de Flexbox para estrutura fluida */
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+}
+
+.app-header {
+  text-align: center;
+  border-bottom: 1px solid var(--icd-border);
+  padding-bottom: 12px;
+}
+
+.app-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+.app-header p {
+  font-size: 13px;
+  color: var(--icd-text-light);
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  padding: 12px;
+  border: 1px solid var(--icd-border);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: inherit;
+  resize: none;
+  background-color: var(--icd-card-bg);
+  color: var(--icd-text-dark);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+/* Efeito moderno ao clicar na caixa de texto */
+textarea:focus {
+  outline: none;
+  border-color: var(--icd-primary);
+  box-shadow: 0 0 0 3px rgba(10, 88, 202, 0.15);
+}
+
+textarea::placeholder {
+  color: #94A3B8;
+}
+
+.btn-primary {
+  background-color: var(--icd-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: var(--icd-primary-hover);
+  box-shadow: 0 6px 8px -1px rgba(0,0,0,0.15);
+}
+
+.btn-primary:active {
+  transform: translateY(1px); /* Efeito de clique físico */
+  box-shadow: var(--shadow-sm);
+}
+
+.app-footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+#statusMessage {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+/* Classes de estado dinâmico geradas pelo JavaScript */
+.status-idle { 
+  color: var(--icd-text-light); 
+}
+.status-success { 
+  color: var(--icd-success); 
+  background-color: rgba(16, 185, 129, 0.1); /* Fundo verde translúcido */
+}
+.status-error { 
+  color: var(--icd-error); 
+  background-color: rgba(239, 68, 68, 0.1); /* Fundo vermelho translúcido */
+}
