@@ -24,8 +24,7 @@ O operador copia a mensagem do cliente (contendo dados como CNPJ, nome da escola
 
 ## 🖼️ Interface do Popup
 
-> *Adicione aqui uma imagem do popup em funcionamento.*  
-> Exemplo: `assets/print.png`
+assets/print.png
 
 ---
 
