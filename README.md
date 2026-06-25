@@ -24,7 +24,11 @@ O operador copia a mensagem do cliente (contendo dados como CNPJ, nome da escola
 
 ## 🖼️ Interface do Popup
 
-assets/print.png
+<p align="center">
+  <img src="./assets/print.png" alt="Print da interface da extensão" width="550">
+  <br>
+  <em>Popup da extensão onde o operador cola a mensagem do WhatsApp.</em>
+</p>
 
 ---
 
