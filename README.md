@@ -3,7 +3,6 @@
 Extensão para Google Chrome que automatiza o preenchimento do formulário de reservas do site **reservaescolar.com.br** a partir de mensagens padronizadas do WhatsApp Web.
 
 ![Banner Reserva Escolar](icon.png)
-
 ---
 
 ## 📋 Visão Geral
@@ -26,7 +25,7 @@ O operador copia a mensagem do cliente (contendo dados como CNPJ, nome da escola
 ## 🖼️ Interface do Popup
 
 > *Adicione aqui uma imagem do popup em funcionamento.*  
-> Exemplo: `assets/popup-screenshot.png`
+> Exemplo: `assets/print.png`
 
 ---
 
