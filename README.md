@@ -108,15 +108,6 @@ Caso o layout do site de reservas mude, basta ajustar os ** seletores CSS** no a
 
 ---
 
-## 📌 Melhorias Futuras (Sugestões)
-
-- [ ] Suporte a múltiplos idiomas nas mensagens
-- [ ] Histórico de reservas realizadas
-- [ ] Opção de editar os dados antes do preenchimento
-- [ ] Atalho de teclado para abrir o popup (ex: `Ctrl+Shift+R`)
-
----
-
 ## 👨‍💻 Autor
 
 Desenvolvido por Bruno Ferreira — otimizando processos e eliminando tarefas manuais repetitivas.
